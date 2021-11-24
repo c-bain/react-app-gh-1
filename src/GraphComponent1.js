@@ -68,8 +68,8 @@ class GraphComponent1 extends React.Component {
       },
       axisX: {
         title: 'Date',
-        minimum: 1636606800000,
-        maximum: 1636693140000,
+        // minimum: 1636606800000,
+        // maximum: 1636693140000,
         labelFormatter: (e) => CanvasJS.formatDate(e.value, 'DD MM YYYY hh:mm ss'),
       },
       axisY: {
@@ -81,8 +81,6 @@ class GraphComponent1 extends React.Component {
         dataPoints: graphData,
       }],
     };
-
-    console.log(options);
 
     return (
       <div>
